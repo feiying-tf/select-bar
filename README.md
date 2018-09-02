@@ -103,83 +103,121 @@ color: {
 ```
 
 * **width** 组件的宽度
+```
 type: String,
 default: '100%'
+```
 
 * **accordion** 是否每次只展开一个
+```
 type: Boolean,
 default: false
+```
 
 * **sectionMarginTop** 小节的top值
+```
 type: Number,
 default: 10
+```
 
 * **chapterMarginTop** 章的top值
+```
 type: Number,
 default: 10
+```
 
 * **isSectionSortable** 小节是否可以拖动
+```
 type: Boolean,
 default: true
+```
 
 * **isChaterSortable** 章是否可以拖动
+```
 type: Boolean,
 default: true
+```
 
 * **isSectionClickToEdit** 是否可以通过点击小节本身触发小节编辑事件
+```
 type: Boolean,
 default: false
+```
 
 * **isShowChapterOrder** 是否显示chapter手动排序输入框
+```
 type: Boolean,
 default: true
+```
 
 * **isShowSectionOrder** 是否显示section手动排序输入框
+```
 type: Boolean,
 default: true
+```
 
 * **maxLength** 可以输入最大长度
+```
 type: Number,
 default: 2
+```
 
 #### 组件中的事件
 * **编辑章**
+```
 // item: 被编辑章对应的data内容
 editChapter (item) {},
+```
 
 * **删除章** 
+```
 // item: 被删除章对应的data内容
 deleteChapter (item) {},
+```
 
 * **增加小节**
+```
 // item: 添加小节对应的data内容
 addSection (item) {},
+```
 
 * **编辑小节**
+```
 // item: 编辑小节对应的data内容
 editSection (item) {},
+```
 
 * **删除小节**
+```
 // item: 删除小节对应的data内容
 deleteSection (item) {},
+```
 
 * **章通过手动输入改变排序**
+```
 // order: 手动输入的排序值
 // item: 被编辑的章对应的data内容
 chapterHandleOrder(order, item) {},
+```
 
 * **小节通过手动输入改变排序**
+```
 // order: 手动输入的排序值
 // item: 被编辑的小节对应的data内容
 sectionHandleOrder(order, item) {},
+```
 
 * **maxLength**
+```
 // order: 为章拖动后新位置的索引
 // item: 被拖动的章对应的data内容
 chapterDragOrder(order, item) {}
+```
 
 * **maxLength** 可以输入最大长度
+```
 // order: 为小节拖动后新位置的索引
 // item: 被拖动的小节对应的data内容
 sectionDragOrder(order, item) {},
+```
 
