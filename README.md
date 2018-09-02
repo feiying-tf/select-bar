@@ -1,10 +1,10 @@
 # select-bar
 下拉可拖动组件
-### 效果
-![效果图片](https://github.com/tfeng-use/select-bar/raw/master/images/example.png)
-### 介绍
+### 1. 效果
+![效果图片](https://github.com/tfeng-use/select-bar/images/example.png)
+### 2. 介绍
 该组件是基于vue2.0的一个组件，同时引入了Sortable.js，这是一个可以拖动排序的插件，由于该插件的兼容性并不是太好（IE10以下都不兼容），所以在该组件同时增加了手动输入的功能。
-### 使用方法
+### 3. 使用方法
 #### 安装
 npm i selectbar
 
@@ -163,60 +163,60 @@ default: 2
 ```
 
 #### 组件中的事件
-* **编辑章**
+##### * 编辑章
 ```
 // item: 被编辑章对应的data内容
 editChapter (item) {},
 ```
 
-* **删除章** 
+##### * 删除章
 ```
 // item: 被删除章对应的data内容
 deleteChapter (item) {},
 ```
 
-* **增加小节**
+##### * 增加小节
 ```
 // item: 添加小节对应的data内容
 addSection (item) {},
 ```
 
-* **编辑小节**
+##### * 编辑小节
 ```
 // item: 编辑小节对应的data内容
 editSection (item) {},
 ```
 
-* **删除小节**
+##### * 删除小节
 ```
 // item: 删除小节对应的data内容
 deleteSection (item) {},
 ```
 
-* **章通过手动输入改变排序**
+##### * 章通过手动输入改变排序
 ```
 // order: 手动输入的排序值
 // item: 被编辑的章对应的data内容
 chapterHandleOrder(order, item) {},
 ```
 
-* **小节通过手动输入改变排序**
+##### * 小节通过手动输入改变排序
 ```
 // order: 手动输入的排序值
 // item: 被编辑的小节对应的data内容
 sectionHandleOrder(order, item) {},
 ```
 
-* **maxLength**
+##### * 章通过拖动改变排序
 ```
-// order: 为章拖动后新位置的索引
+// order: 为章拖动后新位置的排序
 // item: 被拖动的章对应的data内容
 chapterDragOrder(order, item) {}
 ```
 
-* **maxLength** 可以输入最大长度
+##### * 小节通过拖动改变排序
 ```
-// order: 为小节拖动后新位置的索引
+// order: 为小节拖动后新位置的排序
 // item: 被拖动的小节对应的data内容
 sectionDragOrder(order, item) {},
 ```
