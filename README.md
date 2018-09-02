@@ -1,7 +1,7 @@
 # select-bar
 下拉可拖动组件
 ### 1. 效果
-![效果图片](https://github.com/tfeng-use/select-bar/images/example.png)
+![效果图片](https://github.com/tfeng-use/select-bar/blob/master/images/example.gif)
 ### 2. 介绍
 该组件是基于vue2.0的一个组件，同时引入了Sortable.js，这是一个可以拖动排序的插件，由于该插件的兼容性并不是太好（IE10以下都不兼容），所以在该组件同时增加了手动输入的功能。
 ### 3. 使用方法
